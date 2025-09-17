@@ -1,0 +1,16 @@
+/* Styling untuk card statistik di dashboard */
+.icon-box-sm {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h6 {
+  font-size: 0.9rem;
+}
+
+.card h4 {
+  font-size: 1.5rem;
+}

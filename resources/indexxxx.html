@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GNS Admin</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/gnslogo.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <a href="./index.html" class="logo-container">
+          <img src="../assets/images/logos/logogns.svg" alt="Logo">
+        </a>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-6"></i>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link active" href="./index.html" aria-expanded="false">
+                <span>
+                  <iconify-icon icon="solar:home-smile-bold-duotone" class="fs-6"></iconify-icon>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <!-- EDIT KONTEN -->
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-6"></i>
+              <span class="hide-menu">EDIT KONTEN</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link d-flex align-items-center justify-content-between" href="./ui-beranda.html">
+                <div class="d-flex align-items-center">
+                  <iconify-icon icon="solar:layers-minimalistic-bold-duotone" class="fs-6"></iconify-icon>
+                  <span class="hide-menu ms-2">Beranda</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link d-flex align-items-center justify-content-between"
+                 href="javascript:void(0)"
+                 data-bs-toggle="collapse"
+                 data-bs-target="#produkMenu"
+                 aria-expanded="false">
+                <div class="d-flex align-items-center">
+                  <iconify-icon icon="solar:bookmark-square-minimalistic-bold-duotone" class="fs-6"></iconify-icon>
+                  <span class="hide-menu ms-2">Produk</span>
+                </div>
+                <iconify-icon icon="mdi:chevron-down" class="fs-6 rotate-icon"></iconify-icon>
+              </a>
+              <ul class="collapse first-level" id="produkMenu">
+                <li class="sidebar-item">
+                  <a href="./ui-gnet.html" class="sidebar-link">
+                    <span class="hide-menu">Gnet</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="./ui-martabe.html" class="sidebar-link">
+                    <span class="hide-menu">Martabe</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link d-flex align-items-center justify-content-between" href="./ui-Blog.html">
+                <div class="d-flex align-items-center">
+                  <iconify-icon icon="solar:file-text-bold-duotone" class="fs-6"></iconify-icon>
+                  <span class="hide-menu ms-2">Blog</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link d-flex align-items-center justify-content-between" href="./ui-chatbot.html">
+                <div class="d-flex align-items-center">
+                  <iconify-icon icon="solar:chat-round-like-bold-duotone" class="fs-6"></iconify-icon>
+                  <span class="hide-menu ms-2">Custom Bot</span>
+                </div>
+              </a>
+            </li>
+            <!-- AUTH -->
+            <li class="nav-small-cap">
+              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-6"></iconify-icon>
+              <span class="hide-menu">AUTH</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./authentication-login.html">
+                <span><iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon></span>
+                <span class="hide-menu">Login</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                  <div class="message-body">
+                    <a href="ui-profile.html" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-user fs-6"></i>
+                      <p class="mb-0 fs-3">My Profile</p>
+                    </a>
+                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+      <div class="container-fluid">
+        <!-- ====================================================== -->
+        <!-- BAGIAN KONTEN BARU -->
+        <!-- ====================================================== -->
+
+        <!-- Welcome Banner -->
+        <div class="card welcome-card shadow-sm mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <h4 class="card-title">Selamat Datang, Admin!</h4>
+                        <p class="card-subtitle" id="current-date">Senang melihat Anda kembali.</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <img src="../assets/images/logos/gnslogo.png" alt="Welcome illustration" height="60">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Kolom Utama (Kiri) -->
+            <div class="col-lg-8">
+                <!-- Statistik Pengunjung -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold mb-4">Statistik Pengunjung (7 Hari Terakhir)</h5>
+                        <div id="visitor-stats-chart"></div>
+                    </div>
+                </div>
+
+                <!-- Aktivitas Blog Terbaru -->
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fw-semibold mb-4">Aktivitas Blog Terbaru</h5>
+                      <div class="d-flex align-items-center pb-3 border-bottom activity-item">
+                        <img src="../assets/images/blog/blog-img1.jpg" class="rounded-3" alt="img">
+                        <div class="ms-3">
+                          <h6 class="mb-1 fw-semibold fs-4">Promo Internet Merdeka</h6>
+                          <p class="fs-2 mb-0 text-muted">Dipublikasikan 2 hari lalu</p>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-light-primary text-primary ms-auto">Lihat</a>
+                      </div>
+                       <div class="d-flex align-items-center py-3 border-bottom activity-item">
+                        <img src="../assets/images/blog/blog-img2.jpg" class="rounded-3" alt="img">
+                        <div class="ms-3">
+                          <h6 class="mb-1 fw-semibold fs-4">Tips Memilih Router</h6>
+                          <p class="fs-2 mb-0 text-muted">Status: Draft</p>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-light-primary text-primary ms-auto">Edit</a>
+                      </div>
+                      <div class="d-flex align-items-center pt-3 activity-item">
+                        <img src="../assets/images/blog/blog-img3.jpg" class="rounded-3" alt="img">
+                        <div class="ms-3">
+                          <h6 class="mb-1 fw-semibold fs-4">Jangkauan Area Baru!</h6>
+                          <p class="fs-2 mb-0 text-muted">Dipublikasikan 1 minggu lalu</p>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-light-primary text-primary ms-auto">Lihat</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Kolom Samping (Kanan) -->
+            <div class="col-lg-4">
+                <!-- Pesan Terbaru dari Pengguna -->
+                 <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold mb-3">Pesan Terbaru</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="py-3 border-bottom message-item">
+                                <a href="#" class="d-flex align-items-center text-decoration-none">
+                                    <div class="user-avatar rounded-circle flex-shrink-0"> AS </div>
+                                    <div class="ms-3 flex-grow-1">
+                                        <h6 class="mb-1 fs-4 fw-semibold">Andi Setiawan</h6>
+                                        <p class="mb-0 fs-2 text-dark message-subject">Permintaan Pemasangan Baru</p>
+                                    </div>
+                                    <span class="fs-2 text-muted flex-shrink-0">Baru Saja</span>
+                                </a>
+                            </li>
+                             <li class="py-3 border-bottom message-item">
+                                <a href="#" class="d-flex align-items-center text-decoration-none">
+                                    <div class="user-avatar rounded-circle flex-shrink-0"> BD </div>
+                                    <div class="ms-3 flex-grow-1">
+                                        <h6 class="mb-1 fs-4 fw-semibold">Budi Darmawan</h6>
+                                        <p class="mb-0 fs-2 text-dark message-subject">Keluhan Jaringan Lambat</p>
+                                    </div>
+                                    <span class="fs-2 text-muted flex-shrink-0">15m lalu</span>
+                                </a>
+                            </li>
+                             <li class="py-3 message-item">
+                                <a href="#" class="d-flex align-items-center text-decoration-none">
+                                    <div class="user-avatar rounded-circle flex-shrink-0"> CT </div>
+                                    <div class="ms-3 flex-grow-1">
+                                        <h6 class="mb-1 fs-4 fw-semibold">Citra Lestari</h6>
+                                        <p class="mb-0 fs-2 text-dark message-subject">Pertanyaan Mengenai Paket Bisnis</p>
+                                    </div>
+                                    <span class="fs-2 text-muted flex-shrink-0">1j lalu</span>
+                                </a>
+                            </li>
+                        </ul>
+                         <a href="ui-message.html" class="btn btn-outline-primary w-100 mt-3">Lihat Semua Pesan</a>
+                    </div>
+                </div>
+
+                <!-- Akses Cepat -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold mb-4">Akses Cepat</h5>
+                        <div class="d-grid gap-3">
+                            <a href="./ui-Blog.html" class="btn btn-light-info text-info py-3 fs-4 d-flex align-items-center justify-content-center">
+                                <iconify-icon icon="solar:file-text-bold-duotone" class="me-2 fs-6"></iconify-icon> Kelola Blog
+                            </a>
+                            <a href="./ui-chatbot.html" class="btn btn-light-warning text-warning py-3 fs-4 d-flex align-items-center justify-content-center">
+                                <iconify-icon icon="solar:chat-round-like-bold-duotone" class="me-2 fs-6"></iconify-icon> Kustomisasi Bot
+                            </a>
+                            <a href="https://gnsss.netlify.app" target="_blank" class="btn btn-light-success text-success py-3 fs-4 d-flex align-items-center justify-content-center">
+                                <iconify-icon icon="solar:link-round-bold-duotone" class="me-2 fs-6"></iconify-icon> Lihat Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="py-6 px-6 text-center">
+          <p class="mb-0">Copyright &copy; <script>document.write(new Date().getFullYear());</script> PT Gerbang Nusantara Sakti. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  
+
+</body>
+
+</html>
+

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{-- Judul halaman bisa dinamis, dengan default 'GNS Admin' --}}
+  <title>@yield('title', 'Dashboard - GNS Admin')</title>
+  
+  {{-- Path Aset yang Sudah Diperbaiki --}}
+  <link rel="shortcut icon" type="image/png" href="{{ asset('images/logos/gnslogo.png') }}" />
+  <link rel="stylesheet" href="{{ asset('css/styles.min.css') }}" />
+  {{-- <link rel="stylesheet" href="{{ asset('css/dashboard-specific.css') }}"> --}}
+  {{-- <link rel="stylesheet" href="{{ asset('css/style2.css') }}" /> --}}
+  
+  {{-- Slot untuk CSS tambahan per halaman --}}
+  @stack('styles')
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <a href="./index.html" class="logo-container">
+          <img src="../assets/images/logos/logogns.svg" alt="Logo">
+        </a>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-6"></i>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link active" href="./index.html" aria-expanded="false">
+                <span>
+                  <iconify-icon icon="solar:home-smile-bold-duotone" class="fs-6"></iconify-icon>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <!-- EDIT KONTEN -->
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-6"></i>
+              <span class="hide-menu">EDIT KONTEN</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link d-flex align-items-center justify-content-between" href="./ui-beranda.html">
+                <div class="d-flex align-items-center">
+                  <iconify-icon icon="solar:layers-minimalistic-bold-duotone" class="fs-6"></iconify-icon>
+                  <span class="hide-menu ms-2">Beranda</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link d-flex align-items-center justify-content-between"
+                 href="javascript:void(0)"
+                 data-bs-toggle="collapse"
+                 data-bs-target="#produkMenu"
+                 aria-expanded="false">
+                <div class="d-flex align-items-center">
+                  <iconify-icon icon="solar:bookmark-square-minimalistic-bold-duotone" class="fs-6"></iconify-icon>
+                  <span class="hide-menu ms-2">Produk</span>
+                </div>
+                <iconify-icon icon="mdi:chevron-down" class="fs-6 rotate-icon"></iconify-icon>
+              </a>
+              <ul class="collapse first-level" id="produkMenu">
+                <li class="sidebar-item">
+                  <a href="./ui-gnet.html" class="sidebar-link">
+                    <span class="hide-menu">Gnet</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="./ui-martabe.html" class="sidebar-link">
+                    <span class="hide-menu">Martabe</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link d-flex align-items-center justify-content-between" href="./ui-Blog.html">
+                <div class="d-flex align-items-center">
+                  <iconify-icon icon="solar:file-text-bold-duotone" class="fs-6"></iconify-icon>
+                  <span class="hide-menu ms-2">Blog</span>
+                </div>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link d-flex align-items-center justify-content-between" href="./ui-chatbot.html">
+                <div class="d-flex align-items-center">
+                  <iconify-icon icon="solar:chat-round-like-bold-duotone" class="fs-6"></iconify-icon>
+                  <span class="hide-menu ms-2">Custom Bot</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                  <div class="message-body">
+                    <a href="ui-profile.html" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-user fs-6"></i>
+                      <p class="mb-0 fs-3">My Profile</p>
+                    </a>
+                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+    
+    {{-- Memanggil Sidebar --}}
+    {{-- @include('layouts.partials.sidebar') --}}
+    
+    <div class="body-wrapper">
+      
+      {{-- Memanggil Header --}}
+      {{-- @include('layouts.partials.header') --}}
+      
+      <div class="container-fluid">
+        {{-- Di sinilah konten utama halaman (seperti dashboard) akan ditampilkan --}}
+        @yield('content')
+
+        {{-- Memanggil Footer --}}
+        {{-- @include('layouts.partials.footer') --}}
+        <!-- Footer -->
+        <div class="py-6 px-6 text-center">
+          <p class="mb-0">Copyright &copy; <script>document.write(new Date().getFullYear());</script> PT Gerbang Nusantara Sakti. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{-- Path Script yang Sudah Diperbaiki --}}
+  <script src="{{ asset('libs/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ asset('libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('js/sidebarmenu.js') }}"></script>
+  <script src="{{ asset('js/app.min.js') }}"></script>
+  <script src="{{ asset('libs/apexcharts/dist/apexcharts.min.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  
+  {{-- Slot untuk script tambahan per halaman --}}
+  @stack('scripts')
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+    .welcome-card {
+        background: linear-gradient(135deg, var(--bs-primary), var(--bs-cyan));
+        color: white;
+    }
+    .welcome-card .card-title, .welcome-card .card-subtitle {
+        color: white;
+    }
+    .activity-item img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    /* Style baru untuk pesan terbaru */
+    .message-item .user-avatar {
+        width: 40px;
+        height: 40px;
+        background-color: var(--bs-light-primary);
+        color: var(--bs-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+    .message-item .message-subject {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    /* PERBAIKAN: Memastikan layout flexbox rapi */
+    .message-item a > .ms-3 {
+        min-width: 0; /* Mencegah teks mendorong timestamp keluar */
+        padding-right: 0.5rem; /* Memberi sedikit jarak antara subjek dan waktu */
+    }

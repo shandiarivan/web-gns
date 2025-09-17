@@ -1,0 +1,63 @@
+    /* CSS untuk layout fixed & scrollable */
+    .body-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .body-wrapper > .container-fluid {
+      flex-grow: 1;
+      overflow-y: auto;
+      min-height: 0;
+    }
+    .inbox-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .inbox-container .card-body,
+    .inbox-row {
+      display: flex;
+      flex-grow: 1;
+      min-height: 0;
+    }
+    .inbox-panel {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    #messageList,
+    .message-detail-body {
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+    .message-detail-body {
+        line-height: 1.8;
+    }
+    /* Gaya lain yang sudah ada */
+    .message-list-item.active {
+      background-color: var(--bs-light-primary);
+      border-right: 3px solid var(--bs-primary);
+    }
+    .message-list-item .user-avatar {
+      width: 40px;
+      height: 40px;
+      background-color: var(--bs-light-secondary);
+      color: var(--bs-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+    .message-list-item.active .user-avatar {
+      background-color: var(--bs-primary);
+      color: white;
+    }
+    .message-list-item .message-subject {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .message-list-item .ms-3 {
+      min-width: 0;
+    }

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PT. GERBANG NUSANTARA SAKTI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='8' fill='%2306A3DA'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='10' font-weight='bold' fill='%23FFFFFF' text-anchor='middle' alignment-baseline='middle'%3EG%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="loader">
+            <span style="--i:1">G</span>
+            <span style="--i:2">N</span>
+            <span style="--i:3">S</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    
+    <!-- Pleksus Efek-->
+    <div id="plexus-bg"></div>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/logogns.png" alt="Image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Beranda</a>
+                    <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+                    <a href="package.html" class="nav-item nav-link">Produk & Harga</a>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="contact.html" class="nav-item nav-link active">Kontak</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Kontak</h1>
+                    <a href="" class="h5 text-white">Beranda</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="" class="h5 text-white">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+<!-- Tambahkan CSS ini ke file style2.css Anda atau di dalam tag <style> di head -->
+<style>
+    /* Tombol WhatsApp di dalam Card Kontak */
+    .contact-whatsapp-btn {
+        display: inline-block;
+        background-color: #25D366; /* Warna hijau WhatsApp */
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 50px; /* Bentuk pil */
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-top: 15px; /* Jarak dari konten di atasnya */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .contact-whatsapp-btn:hover {
+        background-color: #128C7E; /* Warna hijau lebih gelap saat hover */
+        color: #fff;
+        transform: scale(1.05); /* Sedikit membesar saat disentuh mouse */
+    }
+
+    /* ====================================================== */
+    /* CSS BARU UNTUK KARTU ALAMAT YANG LEBIH BAIK */
+    /* ====================================================== */
+    .contact-card-v4 {
+        /* background-color: #f8f9fa; Latar belakang abu-abu muda */
+        border-radius: 20px; /* Sudut yang lebih rounded */
+        padding: 2rem 1.5rem; /* Padding internal yang lebih besar */
+        border: 2px solid #e9ecef;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card-v4:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .icon-box-v4 {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 1.5rem auto; /* Otomatis ke tengah dan beri jarak bawah */
+        background: linear-gradient(135deg, var(--primary), #00c6ff);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        color: #fff;
+        flex-shrink: 0; /* Mencegah ikon mengecil */
+    }
+
+    .contact-card-v4 .card-content {
+        flex-grow: 1; /* Mendorong tombol WhatsApp ke bawah */
+    }
+
+    .contact-card-v4 .card-title {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #343a40;
+    }
+
+    .contact-card-v4 .card-address {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #6c757d;
+    }
+    
+    .contact-card-v4 .card-phone {
+        font-weight: 600;
+        color: #343a40;
+    }
+
+        /* ====================================================== */
+    /* CSS UNTUK FORMULIR KONTAK */
+    /* ====================================================== */
+    .contact-form-container {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Penting untuk menjaga sudut rounded */
+    }
+
+    .form-image-side {
+        background-image: url('https://placehold.co/600x700/06A3DA/FFFFFF?text=Hubungi+Kami');
+        background-size: cover;
+        background-position: center;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .form-input-side {
+        padding: 3rem;
+    }
+
+    .form-group-icon {
+        position: relative;
+    }
+
+    .form-control-icon {
+        padding-left: 3rem !important; /* Beri ruang untuk ikon */
+        border-radius: 10px !important;
+    }
+
+    .input-icon {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #adb5bd;
+    }
+    
+    .form-control:focus + .input-icon {
+        color: var(--primary);
+    }
+    
+    .btn-submit-contact {
+        border-radius: 10px;
+        padding: 15px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+    }
+
+        /* ====================================================== */
+    /* CSS UNTUK LOGO SVG */
+    /* ====================================================== */
+    .bouncing-logo-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .bouncing-logo {
+        width: 100%;
+        height: 100%;
+        animation: bounce 2.5s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-25px);
+        }
+    }
+</style>
+
+<!-- Contact Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Hubungi Kami</h5>
+            <h1 class="mb-0">Jangan ragu hubungi kami, jika ada yang ingin ditanyakan.</h1>
+        </div>
+        
+        <!-- Informasi Kontak (kode tetap sama) -->
+        <div class="row g-5 mb-5">
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                <div class="contact-card-v4 text-center d-flex flex-column h-100">
+                    <div class="icon-box-v4"><i class="fa fa-map-signs"></i></div>
+                    <div class="card-content"><p class="card-title mb-2">Kantor Pusat Surabaya</p><p class="card-address mb-3">Jl. Raya Wiguna Utara No.34, Gn. Anyar Tambak, Kec. Gn. Anyar, Surabaya, Jawa Timur 60294</p><p class="card-phone mb-0"><i class="bi bi-telephone me-2"></i> 0857-0877-0190</p></div>
+                    <div class="pt-3"><a href="https://wa.me/6285708770190" target="_blank" class="contact-whatsapp-btn"><i class="bi bi-whatsapp me-1"></i> Hubungi WhatsApp</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                <div class="contact-card-v4 text-center d-flex flex-column h-100">
+                    <div class="icon-box-v4"><i class="fa fa-map-signs"></i></div>
+                    <div class="card-content"><p class="card-title mb-2">Kantor Cabang Bojonegoro</p><p class="card-address mb-3">Jl. Raya Dander, Kec. Dander, Kab. Bojonegoro, Jawa Timur 62171</p><p class="card-phone mb-0"><i class="bi bi-telephone me-2"></i> 0857-0877-0190</p></div>
+                    <div class="pt-3"><a href="https://wa.me/6285708770190" target="_blank" class="contact-whatsapp-btn"><i class="bi bi-whatsapp me-1"></i> Hubungi WhatsApp</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.6s">
+                <div class="contact-card-v4 text-center d-flex flex-column h-100">
+                    <div class="icon-box-v4"><i class="fa fa-map-signs"></i></div>
+                    <div class="card-content"><p class="card-title mb-2">Kantor Cabang Simalungun</p><p class="card-address mb-3">Ujungban, Nagori Buntu Bayu, Kec. Hatonduhan, Kab. Simalungun, Sumatera Utara 21174</p><p class="card-phone mb-0"><i class="bi bi-telephone me-2"></i> 0851-8976-6276</p></div>
+                    <div class="pt-3"><a href="https://wa.me/6285189766276" target="_blank" class="contact-whatsapp-btn"><i class="bi bi-whatsapp me-1"></i> Hubungi WhatsApp</a></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Formulir Kontak Baru -->
+        <div class="row g-5 justify-content-center">
+            <div class="col-lg-12 wow slideInUp" data-wow-delay="0.3s">
+                <div class="contact-form-container">
+                    <div class="row g-0">
+                        <!-- Sisi Gambar dengan Logo SVG -->
+                        <div class="col-lg-5 d-none d-lg-block form-image-side">
+                            <div class="bouncing-logo-container">
+                                <svg class="bouncing-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="50" r="48" fill="#FFFFFF" fill-opacity="0.2"/>
+                                    <circle cx="50" cy="50" r="42" fill="#FFFFFF"/>
+                                    <text x="50%" y="50%" font-family="Rubik, sans-serif" font-size="50" font-weight="bold" fill="#06A3DA" text-anchor="middle" dy=".3em">G</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- Sisi Formulir -->
+                        <div class="col-lg-7 form-input-side">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6 form-group-icon">
+                                        <input type="text" class="form-control form-control-icon border-0 bg-light px-4" placeholder="Nama Anda" style="height: 55px;">
+                                        <i class="bi bi-person input-icon"></i>
+                                    </div>
+                                    <div class="col-md-6 form-group-icon">
+                                        <input type="email" class="form-control form-control-icon border-0 bg-light px-4" placeholder="Email Anda" style="height: 55px;">
+                                        <i class="bi bi-envelope input-icon"></i>
+                                    </div>
+                                    <div class="col-12 form-group-icon">
+                                        <input type="text" class="form-control form-control-icon border-0 bg-light px-4" placeholder="Subyek" style="height: 55px;">
+                                        <i class="bi bi-chat-left-text input-icon"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control border-0 bg-light px-4 py-3" rows="5" placeholder="Pesan Atau Komentar"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3 btn-submit-contact" type="submit">Kirim Pesan</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-3 col-md-6 pt-5 mb-5">
+                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                        <h3 class="text-light mb-0">Media Sosial</h3>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-5 mb-5">
+                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                        <h3 class="text-light mb-0">Quick Links</h3>
+                    </div>
+                    <div class="link-animated d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Beranda</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Tentang Kami</a>
+                        <a class="text-light mb-2" href="package.html"><i class="bi bi-arrow-right text-primary me-2"></i>Produk & Harga</a>
+                        <a class="text-light" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                        <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Kontak</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 pt-5 mb-5">
+                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                        <h3 class="text-light mb-0">Paket Internet</h3>
+                    </div>
+                    <div class="link-animated d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>G-Net</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Martabe</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-5 mb-5">
+                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                        <h3 class="text-light mb-0">Hubungi Kami</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-geo-alt text-primary me-2"></i>
+                        <p class="mb-0">
+                            Jl.Raya Wiguna Utara No.34, Gunung Anyar Tambak,
+                            Gunung Anyar, Kota Surabaya,
+                            Jawa Timur 60294
+                        </p>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-telephone text-primary me-2"></i>
+                        <p class="mb-0">(031) 8783737</p>
+                    </div>
+                    <!-- <div class="d-flex mb-2">
+                        <i class="bi bi-whatsapp text-primary me-2"></i>
+                        <p class="mb-0">0851 8976 6276</p>
+                    </div> -->
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-envelope-open text-primary me-2"></i>
+                        <p class="mb-0">support@gerbangnusantarasakti.net</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">Copyright &copy; <script>document.write(new Date().getFullYear());</script> PT Gerbang Nusantara Sakti.</a> All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
+</body>
+
+</html>
